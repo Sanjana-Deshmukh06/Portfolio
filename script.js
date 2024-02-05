@@ -71,3 +71,34 @@ $(document).ready(function(){
         }
     });
 });
+
+let btn1 = document.querySelector("#butn1");
+let btn2 = document.querySelector("#butn2");
+let btn3 = document.querySelector("#butn3");
+let btn4 = document.querySelector("#butn4");
+
+
+
+document.addEventListener('click', function (event) {
+    if (event.target.tagName === 'BUTTON') {
+        const buttonId = event.target.id;
+        let confirmationMessage, redirectUrl;
+
+        if (buttonId === 'butn1') {
+            confirmationMessage = "Are you sure want to visit E-Learning website?";
+            redirectUrl = "https://e-learning system/";
+        } else if (buttonId === 'butn2') {
+            confirmationMessage = "Are you sure want to visit e-health card system?";
+            redirectUrl = "https://e-health card system";
+        } else if (buttonId === 'butn3') {
+            confirmationMessage = "Are you sure want to visit codesandbots?";
+            redirectUrl = "https://www.codesandbots.com/";
+        } else if (buttonId === 'butn4') {
+            confirmationMessage = "Are you sure want to visit this game?";
+            redirectUrl = "https://sanjana-deshmukh06.github.io/Tic-Tac-Toe/";
+        }
+        if (confirm(confirmationMessage)) {
+            window.location.href = redirectUrl;
+        }
+    }
+});
