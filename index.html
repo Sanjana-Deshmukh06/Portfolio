@@ -60,7 +60,7 @@
                     <div class="text">I'm Sanjana and I'm a <span class="typing-2"></span></div>
                     <p>Experienced Product Manager with a demonstrated history of working in the e-learning industry. Skilled in PHP, Python, C,Cascading Style Sheets (CSS), HTML, and ASP.Net Strong business development professional with a Master's degree in Computer Application .
                         Actively looking for job. </p>
-                    <a href="#">Download CV</a>
+                    <a href="ResumeS.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -228,20 +228,25 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="https://formspree.io/f/mwkglqdy" method="post">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="name" placeholder="Name" class="item" autocomplete="off">
+                                <div class="error-text">Full name can't be blank</div>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" class="item" autocomplete="off">
+                                <div class="error-text"> Email name can't be blank</div>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" class="item" autocomplete="off">
+                            <div class="error-text">subject name can't be blank</div>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea name="message" cols="30" rows="10" placeholder="Message.." autocomplete="off">
+                            </textarea>
+                            <div class="error-text">message can't be blank</div>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
