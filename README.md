@@ -7,7 +7,8 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 Interactive Design: A visually appealing interface with smooth animations and transitions. Responsive Layout: Fully optimized for desktops, tablets, and mobile devices.Contact Form: Easy way for visitors to reach out..
 
 🛠️ Tech Stack Frontend: HTML5, CSS3, JavaScript
-Styling: Tailwind CSS Hosting:Github
+Styling: Tailwind CSS
+Hosting:Github
 
 📂 Folder Structure
 
